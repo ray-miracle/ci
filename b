@@ -64,9 +64,9 @@ function exports {
 
 function build_kernel {
     echo "${ORNG}Checking Defconfig"
-	if [ -f $KERNEL_DIR/arch/arm64/configs/hots_defconfig ]
+	if [ -f $KERNEL_DIR/arch/arm64/configs/k53v1_64_bsp_defconfig ]
 	then 
-		DEFCONFIG=hots_defconfig
+		DEFCONFIG=k53v1_64_bsp_defconfig
 	elif [ -f $KERNEL_DIR/arch/arm64/configs/omega_defconfig ]
 	then
 		DEFCONFIG=omega_defconfig
